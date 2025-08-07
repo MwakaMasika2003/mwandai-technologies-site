@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwandai Technologies - Transforming Brands One Design at a Time</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+        }
+        .lucide-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .container-fluid {
+            max-width: 1280px;
+        }
+
+        /* Custom scroll-reveal animation */
+        .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-950 shadow-lg sticky top-0 z-50">
+        <div class="container-fluid mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-indigo-500">Mwandai Technologies</a>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#home" class="text-gray-400 hover:text-indigo-500 transition-colors">Home</a>
+                <a href="#about" class="text-gray-400 hover:text-indigo-500 transition-colors">About</a>
+                <a href="#services" class="text-gray-400 hover:text-indigo-500 transition-colors">Services</a>
+                <a href="#testimonials" class="text-gray-400 hover:text-indigo-500 transition-colors">Testimonials</a>
+                <a href="#pricing" class="text-gray-400 hover:text-indigo-500 transition-colors">Pricing</a>
+                <a href="#faq" class="text-gray-400 hover:text-indigo-500 transition-colors">FAQ</a>
+                <a href="#contact" class="text-gray-400 hover:text-indigo-500 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-400 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 p-4 space-y-2 text-center text-lg shadow-lg">
+            <a href="#home" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">Home</a>
+            <a href="#about" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">About</a>
+            <a href="#services" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">Services</a>
+            <a href="#testimonials" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">Testimonials</a>
+            <a href="#pricing" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">Pricing</a>
+            <a href="#faq" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">FAQ</a>
+            <a href="#contact" class="block py-2 text-gray-400 hover:text-indigo-500 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative overflow-hidden py-24 md:py-48 flex items-center justify-center bg-gray-950">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-gray-900 opacity-70"></div>
+            <div class="container-fluid mx-auto px-6 text-center z-10">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 animate-fade-in-up">Mwandai Technologies</h1>
+                <p class="text-xl md:text-2xl font-light text-gray-300 mb-8 animate-fade-in-up delay-200">Transforming brands one design at a time</p>
+                <a href="#contact" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all transform hover:scale-105 animate-fade-in-up delay-400">Get a Free Quote</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 md:py-28 bg-gray-800">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Our Story</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto animate-fade-in-up delay-100">
+                    At Mwandai Technologies, we are passionate about turning great ideas into stunning visual realities. Founded on the principle that exceptional design can transform a business, we work closely with our clients to understand their unique vision and bring it to life with creativity and precision.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-purple-500 animate-fade-in-up delay-200">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Our Mission</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            To empower businesses of all sizes with professional, impactful, and affordable design solutions that help them stand out in a crowded marketplace.
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-pink-500 animate-fade-in-up delay-300">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Our Values</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Creativity, collaboration, and commitment. We believe in working together to create something truly special, and we are dedicated to delivering results that exceed expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-28 bg-gray-900">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Our Services</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-100">We offer a full suite of digital and print design services to help your brand stand out from the crowd.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card: Websites -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-indigo-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid mx-auto mb-4 text-indigo-500"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="3" x2="21" y1="15" y2="15"/><line x1="9" x2="9" y1="3" y2="21"/><line x1="15" x2="15" y1="3" y2="21"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Websites</h3>
+                        <p class="text-gray-400 leading-relaxed">We design and develop custom websites that are beautiful, responsive, and user-friendly, ensuring a powerful online presence.</p>
+                    </div>
+
+                    <!-- Service Card: Business Cards -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-purple-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contact mx-auto mb-4 text-purple-500"><path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><line x1="2" x2="22" y1="12" y2="12"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Business Cards</h3>
+                        <p class="text-gray-400 leading-relaxed">Create a memorable first impression with professionally designed business cards that reflect your brand's unique identity.</p>
+                    </div>
+
+                    <!-- Service Card: Logos -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-pink-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen-tool-2 mx-auto mb-4 text-pink-500"><path d="m12.79 19.78 2.05-2.05A2.12 2.12 0 0 1 16.22 17l.95.95c.9-.9.9-2.22 0-3.12l-1.93-1.93a2.41 2.41 0 0 0-2.88-2.88L9.27 12.06c-.9.9-2.22.9-3.12 0L5.2 11.11a2.12 2.12 0 0 1 0-3l.95-.95a2.12 2.12 0 0 1 3 0l.95.95c.9.9 2.22.9 3.12 0l1.93-1.93c.9-.9 2.22-.9 3.12 0l.95.95c.9.9.9 2.22 0 3.12l-2.05 2.05"/><path d="M13 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M10 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/><path d="M7 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Logos</h3>
+                        <p class="text-gray-400 leading-relaxed">We craft unique and memorable logos that serve as the visual cornerstone of your brand identity, telling your story in a single mark.</p>
+                    </div>
+                    
+                    <!-- Service Card: Posters & Flyers -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-emerald-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text mx-auto mb-4 text-emerald-500"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Posters & Flyers</h3>
+                        <p class="text-gray-400 leading-relaxed">From eye-catching event posters to impactful promotional flyers, we create designs that grab attention and deliver your message effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-20 md:py-28 bg-gray-800">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Why Choose Mwandai Technologies?</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                    We're more than just designers—we're partners in your brand's success. Here’s what sets us apart.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Benefit Card 1 -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-indigo-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem mx-auto mb-4 text-indigo-500"><path d="M6 3v18l6-4 6 4V3l-6 4z"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Unmatched Quality</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            We deliver high-quality, professional designs that don't just look good—they perform. We are meticulous about every detail.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 2 -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-purple-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users mx-auto mb-4 text-purple-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Personalized Service</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            We take the time to understand your vision and goals, providing a collaborative and supportive experience from start to finish.
+                        </p>
+                    </div>
+
+                    <!-- Benefit Card 3 -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-pink-500 transition-all hover:shadow-2xl hover:scale-105 transform animate-fade-in-up delay-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb mx-auto mb-4 text-pink-500"><path d="M15 14c.2-.5.5-1 1-1s.8.5 1 1"/><path d="M9 14c.2-.5.5-1 1-1s.8.5 1 1"/><path d="M10 20h4"/><path d="M12 21v1"/><path d="M12 11V5"/><path d="M16.5 7.5l2.7-2.7"/><path d="M11.5 2L12 3"/><path d="M17 18h-.01"/><path d="M7 18h-.01"/><path d="M18 10h.01"/><path d="M6 10h.01"/><path d="M12 2a4 4 0 0 0-4 4c0 3.5 3 5.5 3 5.5s1 1 3 1.5c1.7.4 3 2.5 3 2.5V14c0-.7.6-1.5 1.5-1.5s1.5.8 1.5 1.5v2.8c0 1.2-.6 2.3-1.5 2.8H8c-1.2 0-2.3-.6-2.8-1.5"/></svg>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-2">Creative & Innovative</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            We stay ahead of design trends to create modern, fresh, and innovative solutions that capture your audience's attention and leave a lasting impression.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-28 bg-gray-900">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">What Our Clients Say</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                    Don't just take our word for it. Here's what some of our satisfied clients have to say about working with us.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-yellow-500 animate-fade-in-up delay-200">
+                        <p class="text-gray-300 text-lg italic mb-4">"The website Mwandai Technologies created for us exceeded all our expectations. It's beautiful, fast, and exactly what we needed to grow our business."</p>
+                        <p class="text-yellow-500 font-bold">- Rosemary Chiti, CEO of E-Commerce Solutions</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-emerald-500 animate-fade-in-up delay-300">
+                        <p class="text-gray-300 text-lg italic mb-4">"The team at Mwandai Technologies is incredibly talented and professional. They designed a logo and business cards that perfectly capture our brand's identity."</p>
+                        <p class="text-emerald-500 font-bold">- Christopher Mulenga, Founder of Tech Innovations</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-orange-500 animate-fade-in-up delay-400">
+                        <p class="text-gray-300 text-lg italic mb-4">"Their posters and flyers are top-notch. They created a campaign that was eye-catching and really helped drive attendance for our event."</p>
+                        <p class="text-orange-500 font-bold">- Richard Muma, Event Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 md:py-28 bg-gray-800">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Pricing & Affordability</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto animate-fade-in-up delay-100">
+                    We believe professional design should be accessible and affordable for businesses of all sizes. Our pricing is straightforward, transparent, and built around your project's unique needs.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-yellow-500 animate-fade-in-up delay-200">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag text-yellow-500 mr-3"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l7.17-7.17a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>
+                            Customized Quotes
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Every design project is unique. We provide a **custom quote** after a free consultation to ensure our services perfectly match your requirements and budget. This means you only pay for what you need.
+                        </p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-emerald-500 animate-fade-in-up delay-300">
+                        <h3 class="text-2xl font-bold text-gray-100 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign text-emerald-500 mr-3"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            Simple Payment Structure
+                        </h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            To begin, we require a **50% down payment** to secure your project slot and allocate our resources. The remaining **50%** is only due upon the successful completion and your final approval of the work.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center animate-fade-in-up delay-400">
+                    <a href="#contact" class="inline-block bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 transition-colors transform hover:scale-105">
+                        Start with a Free Consultation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 md:py-28 bg-gray-900">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-100">Got questions? We've got answers. Take a look at some of the most common inquiries we receive.</p>
+                
+                <div class="max-w-4xl mx-auto space-y-4 text-left">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-indigo-500 animate-fade-in-up delay-200">
+                        <button class="flex justify-between items-center w-full focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-bold text-gray-100">What is the typical timeline for a project?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-indigo-500 transform transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <p class="text-gray-400 mt-4 hidden faq-answer">Project timelines vary greatly depending on the scope. A simple logo might take a week, while a complete website can take 4-6 weeks. We will provide a detailed timeline with your custom quote.</p>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-purple-500 animate-fade-in-up delay-300">
+                        <button class="flex justify-between items-center w-full focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-bold text-gray-100">Do you offer ongoing maintenance for websites?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-purple-500 transform transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <p class="text-gray-400 mt-4 hidden faq-answer">Yes, we offer monthly maintenance packages to ensure your website remains secure, up-to-date, and performing at its best. This includes updates, backups, and minor content changes.</p>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-800 p-6 rounded-xl shadow-lg border-l-4 border-pink-500 animate-fade-in-up delay-400">
+                        <button class="flex justify-between items-center w-full focus:outline-none faq-toggle">
+                            <h3 class="text-xl font-bold text-gray-100">What file formats do you provide for finished designs?</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-pink-500 transform transition-transform duration-300"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <p class="text-gray-400 mt-4 hidden faq-answer">For logos and other brand assets, we provide a variety of formats including vector files (AI, EPS, SVG) and high-resolution images (PNG, JPEG) suitable for both print and web use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Start CTA Section -->
+        <section class="py-20 bg-indigo-600 text-white text-center">
+            <div class="container-fluid mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in-up">Ready to Transform Your Brand?</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in-up delay-100">
+                    Let's create something amazing together. Get in touch with us to start your next design project.
+                </p>
+                <a href="#contact" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-colors transform hover:scale-105 animate-fade-in-up delay-200">
+                    Get a Free Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-28 bg-gray-800">
+            <div class="container-fluid mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100 mb-4 animate-fade-in-up">Let's Connect</h2>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-up delay-100">Ready to transform your brand? We'd love to hear from you. Fill out the form below or contact us directly.</p>
+                
+                <div class="max-w-5xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-indigo-500 w-full lg:w-1/2 animate-fade-in-up delay-200">
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-left text-sm font-medium text-gray-300">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 bg-gray-800 text-gray-100 border-gray-700 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-left text-sm font-medium text-gray-300">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 bg-gray-800 text-gray-100 border-gray-700 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="your@email.com" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-left text-sm font-medium text-gray-300">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 bg-gray-800 text-gray-100 border-gray-700 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors transform hover:scale-105">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left animate-fade-in-up delay-300">
+                        <div class="bg-gray-900 p-8 rounded-xl shadow-lg border-t-4 border-purple-500 mb-6">
+                            <h3 class="text-2xl font-bold text-gray-100 mb-4">Direct Contact</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-center lg:justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon text-indigo-500 mr-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <p class="text-gray-300 font-medium">+260763588317</p>
+                                </div>
+                                <div class="flex items-center justify-center lg:justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon text-indigo-500 mr-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                    <p class="text-gray-300 font-medium">+260956675445</p>
+                                </div>
+                                <div class="flex items-center justify-center lg:justify-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon text-indigo-500 mr-3"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                    <p class="text-gray-300 font-medium">masikamwaka@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-white py-12">
+        <div class="container-fluid mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-4">Mwandai Technologies</h3>
+            <p class="text-gray-400 mb-6">Transforming brands one design at a time</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Icons (placeholders) -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 11.4-12 11.4a18.23 18.23 0 0 1-4.5-2.5c.6.9 1.3 1.9 2.5 3.1a14 14 0 0 0 17-6.5c-.7 1.3-1.4 2.2-2.3 2.9-1.3-1.3-2.6-2.5-3.6-3.7-2.6-3.4-3.5-6.5-3.5-10.2z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37a4 4 0 1 1-7.24 1.54"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/></svg>
+                </a>
+            </div>
+            <div class="mt-8">
+                <p class="text-sm text-gray-500">&copy; 2024 Mwandai Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank you message modal -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 hidden items-center justify-center p-4">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center max-w-sm w-full border-t-4 border-indigo-500">
+            <h3 class="text-2xl font-bold text-indigo-500 mb-4">Thank you!</h3>
+            <p class="text-gray-300 mb-6">Your message has been received. We will get back to you shortly.</p>
+            <button id="modal-close-button" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-full hover:bg-indigo-700 transition-colors">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Toggle mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('nav a, #mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form submission logic
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+        const modalCloseButton = document.getElementById('modal-close-button');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show the success message
+            
+            // Show the modal
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            // Reset the form after submission
+            contactForm.reset();
+        });
+
+        modalCloseButton.addEventListener('click', function() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        });
+
+        // FAQ Toggle Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                // Toggle the answer's visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate the icon
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>
