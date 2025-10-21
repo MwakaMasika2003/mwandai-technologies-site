@@ -318,13 +318,9 @@
                     
                     <!-- Contact Form -->
                     
-                        <!-- Name Input --><form 
-    id="quotationForm" 
-    name="contact" 
-    method="POST" 
-    data-netlify="true" 
-    action="/thank-you.html"  class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-8"
->
+    <!-- Name Input -->
+                <form id="quotationForm" class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">                   
+   
     </form>
                         <div class="flex flex-col">
                             <label for="name" class="text-sm font-medium text-gray-300 mb-1">Full Name</label>
@@ -412,11 +408,11 @@
         });
 
         // Form Submission Logic
-        //const quotationForm = document.getElementById('quotationForm');
-       // const thankYouMessage = document.getElementById('thankYouMessage');
+        const quotationForm = document.getElementById('quotationForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
 
-        //quotationForm.addEventListener('submit', function(event) {
-            //event.preventDefault(); // Prevent the form from submitting normally
+        quotationForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
 
             // You can add logic here to send the form data to a backend service.
             // Since you requested no real-time display, this part is for demonstration.
